@@ -1,3 +1,36 @@
-<p>
-  drag-drop works!
-</p>
+<div cdkDropListGroup>
+  <div class="example-container">
+    <!-- <h2>好きなネタ</h2>
+    <cdk-drop [data]="todo" (dropped)="drop($event)">
+      <ul>
+        <li *ngFor="let item of list" cdkDrag>
+          <h2>{{ item }}</h2>
+        </li>
+      </ul>
+    </cdk-drop> -->
+    <h2>To do</h2>
+    <!-- <div
+      cdkDropList
+      [cdkDropListData]="todo" 
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of todo" cdkDrag>
+        {{ item }}
+      </div>
+    </cdk-dropList>
+  </div> -->
+
+    <div class="example-container">
+      <h2>Done</h2>
+      <!-- <div
+      cdkDropList
+      [cdkDropListData]="done"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div class="example-box" *ngFor="let item of done" cdkDrag>
+        {{ item }}
+      </div>
+    </div> -->
+    </div>
+  </div>
+</div>
