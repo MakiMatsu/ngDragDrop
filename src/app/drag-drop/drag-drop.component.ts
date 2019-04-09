@@ -1,9 +1,8 @@
-import {Component, NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import {Component} from '@angular/core';
 import {
   CdkDragDrop,
   moveItemInArray,
   transferArrayItem,
-  CdkDrag,
 } from '@angular/cdk/drag-drop';
 
 @Component({
@@ -11,13 +10,10 @@ import {
   templateUrl: 'drag-drop.component.html',
   styleUrls: ['drag-drop.component.scss'],
 })
-// @NgModule({
-//   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-// })
 export class DragDropComponent {
-  todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+  todo = ['いか', 'たこ', 'にら', 'たまご'];
 
-  done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
+  done = ['豚肉', 'とまと', 'キャベツ', 'しお', 'コーン'];
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
